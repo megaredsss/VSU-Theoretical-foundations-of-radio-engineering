@@ -13,7 +13,7 @@ figure
 plot(W,angle(K1),'k-',W,angle(K2),'k--','LineWidth',2.5);
 hleg=legend('First','Second');
 h1=@(t)dirac(t);
-h2=@(t,tau_K)(-1./tau_K).*exp(-t./tau_K).*heaviside(t);
+h2=@(t,tau_K)(1./tau_K).*exp(-t./tau_K).*heaviside(t);
 h=@(t,tau_K)h1(t)+h2(t,tau_K);
 t=[-5:1E-2:20];
 for i=1:length(t)

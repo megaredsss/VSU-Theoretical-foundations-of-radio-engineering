@@ -8,13 +8,14 @@ e1 = 1.15*exp(j*pi/5);e2 = 2.2*exp(j*(-pi/4));e3 = 0.9*exp(j*(-pi/3));
 E1 = e1-e2; E2 = e2+e3; E3=-e3;
 U = [E1; E2; E3;]
 disp(z1);disp(z2);disp(z3);disp(z4);disp(z5);
-disp('Z^-1');
-disp(Z^-1);
 Z1=Z^-1;
 Z2=Z1*U;
 Z3=Z*Z2;
 disp('Z=');
 disp(Z);
+disp('  ');
+disp('Z^-1');
+disp(Z^-1);
 disp('  ');
 disp('U=');
 disp(U);
